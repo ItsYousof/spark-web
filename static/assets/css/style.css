@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+nav li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+#title {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#content {
+    text-align: center;
+    font-size: 18px;
+}
+
+.search {
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+#splashT {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+ /* Style your custom menu */
+ #custom-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    min-width: 120px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 3px;
+}
+#custom-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+#custom-menu a:hover {
+    background-color: #ddd;
+}
+
+.profile-popup {
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    min-width: 120px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 3px;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
+
+.profile-popup button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.profile-popup button:hover {
+    background-color: #0069d9;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}

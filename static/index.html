@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark Web</title>
+    <link rel="icon" href="assets/images/web_logo.png">
+    <script src="https://kit.fontawesome.com/828c19ed9a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <img src="assets/images/web_logo.png" alt="" style="cursor: pointer;" >
+        <li style="margin-right: auto;"><a href="home" class="logo">Spark Web</a></li>
+        <li><a href="games">Games</a></li>
+        <li><a href="apps">Apps</a></li>
+        <li><a href="settings">Settings</a></li>
+    </nav>
+
+    <div class="container">
+        <h1 id="title">Spark Web</h1>
+        <p id="content">This is Spark Web, a place to play, learn, and share.</p>
+    </div>
+
+    <form action="POST" >
+        <input type="text" placeholder="Search using Google or Type a URL" class="search" id="search">
+    </form>
+    <p id="splashT"></p>
+    <div id="custom-menu">
+        <a href="locker">
+            <i class="fa-regular fa-user" style="margin-right: 10px;"></i>
+            Profile</a>
+        <a href="#">Custom Action 2</a>
+        <a href="#">Custom Action 3</a>
+    </div>
+    <div class="overlay" style="display: none;"></div>
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>

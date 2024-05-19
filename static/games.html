@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark Web | Games</title>
+    <link rel="icon" href="assets/images/web_logo.png">
+    <link rel="stylesheet" href="assets/css/games.css">
+</head>
+<body>
+    <nav>
+        <li style="margin-right: auto;"><a href="index.html" class="logo">Spark Web</a></li>
+        <li><a href="games">Games</a></li>
+        <li><a href="apps">Apps</a></li>
+        <li><a href="settings">Settings</a></li>
+    </nav>
+
+    <div class="container">
+        <h1 id="title" style="color: #000; font-size: 60px; text-align: center; margin-bottom: 0px; font-family: POppins;">Games</h1>
+        <p id="content" style="color: gray;">This is Spark Web, a place to play, learn, and share.</p>
+    </div>
+
+    <div class="games-container">
+        <div class="game" onclick="lunchGame('https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@843c1a10f4bf78019b513ea7a8a8c3146f3dfa59/2slope.xml&container=ig')">
+            <h4>Slope</h4>
+            <p class="game-description">
+                A 3D physics based endless running game where players control a ball navigating a treacherous, geometric landscape. With smooth controls and challenging obstacles, players must dodge obstacles, keep their momentum, and strive for the highest score possible.
+            </p>
+            <button>Play Now</button>
+        </div>
+        <div class="game" onclick="lunchGame('https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/AICommand@83a2b987f7eb2bd6f512ddbeb6e780988637be7d/Assets/tunnel-3d.xml&container=ig')">
+            <h4>Tunnel Rush</h4>
+            <p class="game-description">
+                A 3D physics based endless running game where players navigate through twisting tunnels and obstacles. Players take on the role of a surfer who must survive through changing directions and pass through obstacles that can be static or dynamic. 
+            </p>
+            <button>Play Now</button>
+        </div>
+        <div class="game" onclick="lunchGame('https://turbowarp.org/105500895/embed?autoplay&addons=remove-curved-stage-border')">
+            <h4>Geometry Dash</h4>
+            <p class="game-description">
+                A 3D physics based endless running game where players navigate through twisting tunnels and obstacles. Players take on the role of a surfer who must survive through changing directions and pass through obstacles that can be static or dynamic. 
+            </p>
+            <button>Play Now</button>
+        </div>
+        <div class="game" onclick="lunchGame('https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Ffive-nights-at-freddy-s.xml&container=ig')">
+            <h4>Fnaf 1</h4>
+            <p class="game-description">
+                An electrifying rhythm-based platformer where players navigate through a series of challenging levels filled with obstacles and traps. With addictive gameplay and a vibrant, geometric art style, players must jump, fly, and flip their way to victory while synced to the beat.
+            </p>
+            <button>Play Now</button>
+        </div>
+        <div class="game" onclick="lunchGame('https://shardnetworkstorage.w3spaces.com/games/t3.html')">
+            <h4>Time Shooter 3 SWAT</h4>
+            <p class="game-description">
+                An action-packed first-person shooter game set across various time periods. With futuristic weapons and time-traveling mechanics, players battle through dynamic environments, altering history's course while engaging in intense multiplayer battles or immersive single-player campaigns.
+            </p>
+            <button>Play Now</button>
+        </div>
+        <div class="game" onclick="lunchGame('https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@e7d53b913d54429e5e118ca9541fb0f8f1f66bdc/dist/cc.xml&container=ig')">
+            <h4>Cookie Clicker</h4>
+            <p class="game-description">
+                An addictive incremental game where players start by clicking to produce cookies, then expand their bakery empire by purchasing upgrades and buildings. With endless possibilities and humorous achievements, players strive to bake as many cookies as possible to become the ultimate cookie tycoon.
+            </p>
+            <button>Play Now</button>
+        </div>
+    </div>
+    <iframe id="game-frame" style="display: none; width: 100%; height: 100%; border: none; z-index: -1; position: absolute; top: 0; left: 0; pointer-events: none;"></iframe>
+    <script src="assets/js/games.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>

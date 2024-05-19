@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark Web | Settings</title>
+    <link rel="icon" href="assets/images/web_logo.png">
+    <link rel="stylesheet" href="assets/css/settings.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+</head>
+<body>
+    <nav>
+        <li style="margin-right: auto;"><a href="index.html" class="logo">Spark Web</a></li>
+        <li><a href="games" class="link">Games</a></li>
+        <li><a href="apps" class="link">Apps</a></li>
+        <li><a href="settings" class="link">Settings</a></li>
+    </nav>
+
+    <div class="container">
+        <h1 id="title" style="color: #000; font-size: 60px; text-align: center; margin-bottom: 0px; font-family: POppins;">Settings</h1>
+        <p id="content" style="color: gray;">This is Spark Web, a place to play, learn, and share.</p>
+    </div>
+    
+    <div class="settings-container">
+        <div class="settings-item">
+            <h3>Tab Name</h3>
+            <input type="text" placeholder="Tab Name" id="tabName">
+            <button onclick="saveTabName()">Save</button>
+            <p>Will save the tab name.</p>
+        </div>
+        <div class="settings-item">
+            <h3>Go About:Blank</h3>
+            <button onclick="goAboutBlank()">Go Now!</button>
+            <button onclick="toggleAboutBlank()">Go Automatically</button>
+            <p>Will send you to about:blank.</p>
+        </div>
+
+        <div class="settings-item">
+            <h3>Tab Icons</h3>
+                <img src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png" onclick="googleDrive()">
+                <img src="assets/images/docs.webp" onclick="googleDocs()">
+                <img src="https://static-00.iconduck.com/assets.00/google-icon-2048x2048-pks9lbdv.png" onclick="google()">
+                <img src="https://www.gstatic.com/classroom/logo_square_rounded.svg" onclick="classroom()">
+            <p>Will change the tab icons.</p>
+        </div>
+
+        <!-- <div class="settings-item">
+            <h3>Themes</h3>
+            <select name="" id="themeSelection" onchange="checkTheme()">
+                <option value="default" selected disabled>Default</option>
+                <option value="dark" data-theme="dark">Dark</option>
+                <option value="dark-blue"  data-theme="dark-blue">Dark Blue</option>
+                <option value="dark-red" data-theme="dark-red">Dark Red</option>
+            </select>
+            <p>Will change the theme.</p>
+        </div> -->
+    </div>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>

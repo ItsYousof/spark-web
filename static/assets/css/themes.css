@@ -1,0 +1,34 @@
+body .dark {
+    background: #222;
+    color: #fff;
+}
+
+body .dark-blue {
+    background: linear-gradient(to bottom, rgb(16, 52, 82), rgb(9, 34, 55), black);
+    color: #fff;
+}
+
+body .dark-red {
+    background: linear-gradient(to bottom, rgb(82, 16, 16), rgb(55, 9, 9), black);
+    color: #fff;
+}  
+
+nav .dark {
+    background: #222;
+    color: #fff;
+}
+
+nav li a .dark {
+    color: #fff;
+}
+
+nav .dark-blue {
+    background: linear-gradient(to bottom, rgb(16, 52, 82), rgb(9, 34, 55), black);
+    color: #fff;
+}   
+
+nav .dark-red {
+    background: linear-gradient(to bottom, rgb(82, 16, 16), rgb(55, 9, 9), black);
+    color: #fff;
+}
+

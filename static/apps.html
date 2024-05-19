@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark Web | Apps</title>
+    <link rel="icon" href="assets/images/web_logo.png">
+    <link rel="stylesheet" href="assets/css/games.css">
+</head>     
+<body>
+    <nav>
+        <li style="margin-right: auto;"><a href="index.html" class="logo">Spark Web</a></li>
+        <li><a href="games">Games</a></li>
+        <li><a href="apps">Apps</a></li>
+        <li><a href="settings">Settings</a></li>
+    </nav>
+
+    <div class="container">
+        <h1 id="title" style="color: #000; font-size: 60px; text-align: center; margin-bottom: 0px; font-family: POppins;">Apps</h1>
+        <p id="content" style="color: gray;">This is Spark Web, a place to play, learn, and share.</p>
+    </div>
+
+    <div class="games-container">
+        <div class="game" onclick="lunchApp('https://youtube.com')">
+            <h4>Youtube</h4>
+            <p class="game-description">
+                YouTube is the world's largest video-sharing platform, allowing users to watch, upload, and share videos on a wide range of topics. From music and tutorials to vlogs and documentaries, YouTube offers a vast library of content, making it a go-to destination for entertainment.
+            </p>
+            <button>Play Now</button>
+        </div>
+        <div class="game" onclick="lunchApp('https://tiktok.com')">
+            <h4>Tiktok</h4>
+            <p class="game-description">
+                TikTok is a popular social media platform for short-form videos, where users can create and share content ranging from lip-syncing to comedy sketches and dance challenges. With its engaging and easy-to-use interface, TikTok has become a global hub for creativity.
+            </p>
+            <button>Play Now</button>
+        </div>
+        <div class="game" onclick="lunchApp('https://twitch.tv')">
+            <h4>Twitch</h4>
+            <p class="game-description">
+                Twitch is a leading live streaming platform primarily focused on gaming, but also featuring content related to music, art, and more. With a vibrant community of streamers and viewers, Twitch offers real-time interaction, allowing audiences to engage with their favorite creators. 
+            </p>
+            <button>Play Now</button>
+        </div>
+        <div class="game" onclick="lunchApp('https://google.com')">
+            <h4>Google</h4>
+            <p class="game-description">
+                Google is a multinational technology company known for its search engine, Google Search, which provides access to vast amounts of information online. Beyond search, Google offers a range of products and services, including email (Gmail), cloud storage (Google Drive), ect.
+            </p>
+            <button>Play Now</button>
+        </div>
+        <div class="game" onclick="lunchApp('https://discord.com')">
+            <h4>Discord</h4>
+            <p class="game-description">
+                Discord is a popular communication platform designed for communities, gamers, and friends to chat, voice call, and share media in real-time. With features like servers, channels, and customizable roles, Discord provides a versatile and engaging environment for people to connect with each other.
+            </p>
+            <button>Play Now</button>
+        </div>
+        <div class="game" onclick="window.location.href = 'loader'">
+            <h4>File Loader</h4>
+            <p class="game-description">
+                This type of app would allow users to upload an HTML file, and upon clicking a "load" button, the app would display the content of the HTML file within the app's interface. This could be a useful tool for previewing and editing HTML files without needing to open them in a web browser. This app can bypass blocker too!
+            </p>
+            <button>Play Now</button>
+        </div>
+        <div class="game" onclick="lunchApp('https://snapchat.com')">
+            <h4>Snapchat</h4>
+            <p class="game-description">
+                Snapchat is a multimedia messaging app where users can send photos and videos, known as "Snaps," that disappear after being viewed. With features like filters, lenses, and stories, Snapchat offers a fun and creative way for users to communicate and share moments with friends and followers.
+            </p>
+            <button>Play Now</button>
+        </div>
+    </div>
+
+    <script src="assets/js/apps.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>

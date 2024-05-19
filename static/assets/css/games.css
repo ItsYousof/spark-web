@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+nav li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#title {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#content {
+    text-align: center;
+    font-size: 18px;
+}
+
+.games-container {
+    font-family: 'Poppins';
+		font-size: 15px;
+		font-weight: 500;
+		padding: 5px 10px;
+		background-color: #f1f1f1;
+		color: #424244;
+		border: none;
+		border-radius: 10px;
+		transition: all 0.3s ease-in-out;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.game {
+    display: inline-block;
+    border: 1px solid #27272a;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.game:hover {
+    background-color: #27272a;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.game img {
+    width: 100%;
+}
+
+.game h4 {
+    color: #101010;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.game p {
+    margin-top: 5px;
+    color: gray;
+}
+
+.game button {
+    background-color: #27272a;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: medium;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1200px) {
+	.games-container {
+		max-width: 900px;
+	}
+
+	.game {
+		flex-basis: calc(33.33% - 20px);
+		margin: 10px 20px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.games-container {
+		max-width: 600px;
+	}
+
+	.game {
+		flex-basis: calc(50% - 20px);
+		margin: 10px 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.games-container {
+		flex-basis: calc(50% - 20px);
+		margin: 10px 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.game {
+		flex-basis: calc(100% - 20px);
+		margin: 10px;
+	}
+}

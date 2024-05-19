@@ -1,0 +1,149 @@
+body,
+		html {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			background-color: #f1f1f1;
+			font-family: arial;
+            color: #000;
+		}
+
+		#fileInput {
+			display: none;
+		}
+
+		#fileLabel {
+			padding: 20px 40px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			font-size: 18px;
+			transition: all 0.3s ease;
+			position: relative;
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+
+		#fileLabel:hover {
+			background-color: #0056b3;
+		}
+
+		#fileLabel:active {
+			background-color: #004080;
+		}
+
+		#fileLabel:before {
+			content: 'Choose HTML File';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1;
+			transition: transform 0.3s ease;
+		}
+
+		#fileLabel:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 300%;
+			height: 300%;
+			background-color: rgba(255, 255, 255, 0.1);
+			border-radius: 50%;
+			transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+			z-index: 0;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+		}
+
+		#fileInput:focus+#fileLabel:after {
+			width: 0;
+			height: 0;
+			opacity: 1;
+		}
+
+		#fileInfo {
+			color: #000;
+			margin-bottom: 20px;
+			display: none;
+		}
+
+		#loadButton {
+			padding: 15px 30px;
+			background-color: #28a745;
+			color: #fff;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			font-size: 18px;
+			transition: all 0.3s ease;
+		}
+
+		#loadButton:hover {
+			background-color: #218838;
+		}
+
+		#loadButton:active {
+			background-color: #1e7e34;
+		}
+
+		.use {
+			padding: 15px 30px;
+			margin: 10px;
+			background-color: #000f0f;
+			color: #fff;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			font-size: 18px;
+			transition: all 0.35s ease;
+		}
+
+		.use:hover {
+			font-size: 20px;
+		}
+    @keyframes example {
+      0% {background-color:red; left:0px; top:0px;}
+      25% {background-color:yellow; left:95%; top:0px;}
+      50% {background-color:blue; left:95%; top:600px;}
+      75% {background-color:green; left:0px; top:600px;}
+      100% {background-color:red; left:0px; top:0px;}
+    }
+    .box {border:2px #fff solid;
+      border-color:#fff;
+      display:block;
+      margin:20px;
+      align-items: left;
+      justify-content: left;
+      float:left;
+      width:20px;
+      height:20px;
+      background-color:#444;
+      border-radius: 10px 10px 10px 10px;
+      position: relative;
+      animation-name: example;
+      animation-duration: 4s;
+		  animation-iteration-count: infinite;
+    }
+    .content {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+    }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/web_logo.png">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <title>Spark Web | Login</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <form action="POST">
+        <h1>Login</h1>
+        <input type="text" placeholder="Username" id="username">
+        <div class="error-message">Invalid Username, Please Try Again</div>
+        <input type="password" placeholder="Password" id="password">
+        <div class="error-message1">Invalid Password, Please Try Again</div>
+        <input type="submit" value="Login">
+        <a href="register">Need an Account?</a>
+        <a href="forgot">Forgot Password</a>
+    </form>
+
+    <script src="assets/js/login.js"></script>
+    <script>
+        let screenResolution = window.screen.width + "x" + window.screen.height;
+        console.log(screenResolution);
+    </script>
+</body>
+</html>

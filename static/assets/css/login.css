@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('../images/1920x1080\ -\ Background\ Login.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 50%;
+    font-size: medium;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+form input:focus {
+    width: 70%;
+    border-bottom: 1px solid #27272a;
+}
+
+form input[type="submit"] {
+    background-color: #27272a;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: medium;
+    width: 50% !important;
+}
+
+form input[type="submit"]:hover {
+    background-color: #505055;
+}
+
+form button {
+    background-color: #27272a;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: medium;
+}
+
+form button:hover {
+    background-color: #27272a;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: medium;
+}
+
+form a {
+    text-decoration: none;
+    color: #27272a;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+form a:hover {
+    text-decoration: none;
+    color: #27272a;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.error-message, .error-message1 {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 2px;
+}
