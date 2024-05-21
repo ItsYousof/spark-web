@@ -60,14 +60,6 @@ app.post('/proccess_login', (req, res) => {
     }
 });
 
-// Enabling this will cause the games to not function
-//  app.get('/404', (req, res) => {
-//      res.sendFile(__dirname + '/static/404.html');
-//  });
-
-//  app.get('/*', (req, res) => {
-//     res.redirect('/404');
-//  })
 
 app.get('/worker', async (req, res) => {
     try {
@@ -85,7 +77,7 @@ app.get('/worker', async (req, res) => {
       }
 });
 
-app.get('loader', (req, res) => {
+app.get('/loader', (req, res) => {
     res.sendFile(__dirname + '/static/loader.html');
 });
 

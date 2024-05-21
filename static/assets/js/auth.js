@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const authToken = sessionStorage.getItem('authToken');
     if (!authToken) {
         // Redirect to login page if token is not found
-        window.location.href = "/login";
+        window.location.href = "login";
     } else {
         // Log the token to the console if it exists
         console.log("Auth Token:", authToken);
