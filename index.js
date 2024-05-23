@@ -81,6 +81,4 @@ app.get('/loader', (req, res) => {
     res.sendFile(__dirname + '/static/loader.html');
 });
 
-app.listen(port, () => {
-    console.log(`Server listening on port http://localhost:${port}`);
-})
+app.listen(port)
