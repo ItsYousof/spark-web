@@ -10,7 +10,9 @@ This website may be used for its intended purpose ONLY<br>
 
 This website is not really a proxy!! It's main use is to render games, this means that the proxy on this website may not work most of the time on the websites/games you might try to render.
 
-Here are ways you can host this website:
-
+## Deployment
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repositoryurl=https://github.com/YousofAbdelrehim/spark-web)
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=https://github.com/YousofAbdelrehim/spark-web)
+
+## Discord
+TO COME 
